@@ -322,7 +322,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "4. Consultas SQL",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -336,7 +336,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "4. Consultas SQL"
             ],
             "id": "472a4e03-0575-4f0c-abde-fdb8f785f1c3",
             "source": {
@@ -368,7 +368,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "3. Validar Token",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -382,7 +382,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "3. Validar Token"
             ],
             "id": "d630d9fd-07ba-46ab-aed6-fdf012280e25",
             "source": {
@@ -395,8 +395,64 @@
             },
             "vertices": [
               {
-                "x": 550,
-                "y": 370
+                "x": 590,
+                "y": 340
+              },
+              {
+                "x": 600,
+                "y": 350
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "5. Datos Tarjeta Tokenizados",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "5. Datos Tarjeta Tokenizados"
+            ],
+            "id": "eb31ddd7-d333-47c0-a65b-dc0dfdab2a9a",
+            "source": {
+              "x": 776,
+              "y": 420
+            },
+            "target": {
+              "cell": "b70d9145-ae88-452f-87b6-6baf3aa8f54b",
+              "port": "e23e4ac4-747c-4520-bcce-1135ef27d4fb"
+            },
+            "vertices": [
+              {
+                "x": 870,
+                "y": 440
               }
             ]
           },
@@ -784,7 +840,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "2. Peticiones JSON / JWT",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -798,7 +854,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "2. Peticiones JSON / JWT"
             ],
             "id": "6baa52ca-36f3-47ec-9448-326d407291f9",
             "source": {
@@ -810,6 +866,123 @@
               "port": "ccab1f0e-219e-4dc0-9408-cde8f55bb0cd"
             },
             "vertices": []
+          },
+          {
+            "position": {
+              "x": 1040,
+              "y": 450
+            },
+            "size": {
+              "width": 180,
+              "height": 70
+            },
+            "attrs": {
+              "text": {
+                "text": "Pasarela Pagos Stripe"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "f57456c5-cb33-49e0-8cf4-458e08ab1ed4"
+                },
+                {
+                  "group": "right",
+                  "id": "04512a8c-7946-41da-93bb-60f21494463b"
+                },
+                {
+                  "group": "bottom",
+                  "id": "9975f5b2-bf51-4f81-88be-b198ac19cffe"
+                },
+                {
+                  "group": "left",
+                  "id": "e23e4ac4-747c-4520-bcce-1135ef27d4fb"
+                }
+              ]
+            },
+            "id": "b70d9145-ae88-452f-87b6-6baf3aa8f54b",
+            "zIndex": 15,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Pasarela Pagos Stripe",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
           }
         ]
       }
