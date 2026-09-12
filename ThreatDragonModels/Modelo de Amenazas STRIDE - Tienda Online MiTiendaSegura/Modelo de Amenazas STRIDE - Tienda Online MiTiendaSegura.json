@@ -21,6 +21,43 @@
         "cells": [
           {
             "position": {
+              "x": 170,
+              "y": -19.99999999999369
+            },
+            "size": {
+              "width": 790,
+              "height": 710
+            },
+            "attrs": {
+              "label": {
+                "text": "Backend API + Servicio Auth + BD"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "93e9dd79-5490-420a-bdf6-e78a556b0b27",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Backend API + Servicio Auth + BD",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "f2915de5-fcc0-423d-b460-f6f29e27b1b2",
+                "472a4e03-0575-4f0c-abde-fdb8f785f1c3",
+                "d630d9fd-07ba-46ab-aed6-fdf012280e25",
+                "6baa52ca-36f3-47ec-9448-326d407291f9"
+              ],
+              "containedElements": [
+                "2660c7df-2cf2-4293-bf60-07d62b9c97f8",
+                "1813b6c5-b9ca-423c-829f-b9a6394e4517",
+                "b14bc918-4144-409f-8fda-3e261e1e1a0b"
+              ]
+            }
+          },
+          {
+            "position": {
               "x": 9.999999999999986,
               "y": 160.0000000000001
             },
@@ -287,7 +324,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "93e9dd79-5490-420a-bdf6-e78a556b0b27"
+              ]
             },
             "labels": [
               "1. Credenciales / HTTPS"
@@ -333,7 +372,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "93e9dd79-5490-420a-bdf6-e78a556b0b27"
+              ]
             },
             "labels": [
               "4. Consultas SQL"
@@ -379,7 +420,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "93e9dd79-5490-420a-bdf6-e78a556b0b27"
+              ]
             },
             "labels": [
               "3. Validar Token"
@@ -851,7 +894,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "93e9dd79-5490-420a-bdf6-e78a556b0b27"
+              ]
             },
             "labels": [
               "2. Peticiones JSON / JWT"
