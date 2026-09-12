@@ -21,12 +21,12 @@
         "cells": [
           {
             "position": {
-              "x": 170,
-              "y": -19.99999999999369
+              "x": 220.00000000000023,
+              "y": 5.8548721426632255e-12
             },
             "size": {
-              "width": 790,
-              "height": 710
+              "width": 740,
+              "height": 690
             },
             "attrs": {
               "label": {
@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "93e9dd79-5490-420a-bdf6-e78a556b0b27",
             "zIndex": -1,
+            "id": "93e9dd79-5490-420a-bdf6-e78a556b0b27",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Backend API + Servicio Auth + BD",
@@ -170,23 +170,9 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
-              "threats": [
-                {
-                  "id": "1ba7bc43-dea6-406a-a1d4-d73bf3f309f0",
-                  "title": "Suplantación por robo de credenciales",
-                  "status": "Mitigated",
-                  "severity": "High",
-                  "type": "Spoofing",
-                  "description": "Atacante usa credenciales filtradas para suplantar usuario legítimo",
-                  "mitigation": "MFA, política contraseñas fuertes, hash bcrypt, bloqueo tras 5 intentos fallidos",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 1,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 0,
                 "repudiation": 0
               }
             }
@@ -379,7 +365,8 @@
             "target": {
               "cell": "b14bc918-4144-409f-8fda-3e261e1e1a0b",
               "port": "ccab1f0e-219e-4dc0-9408-cde8f55bb0cd"
-            }
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -986,6 +973,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1069,7 +1057,6 @@
               ]
             },
             "id": "b70d9145-ae88-452f-87b6-6baf3aa8f54b",
-            "zIndex": 15,
             "data": {
               "type": "tm.Actor",
               "name": "Pasarela Pagos Stripe",
@@ -1087,6 +1074,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 3
+    "threatTop": 4
   }
 }
