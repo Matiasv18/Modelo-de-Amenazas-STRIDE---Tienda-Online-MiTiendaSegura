@@ -1,0 +1,28 @@
+{
+  "version": "2.6.2",
+  "release_version": "v1.0",
+  "released_at": "2026-09-12",
+  "summary": {
+    "title": "Modelo de Amenazas STRIDE - Tienda Online MiTiendaSegura",
+    "owner": "Matias Virgüez",
+    "description": "Aplicación web e-commerce \"MiTiendaSegura\" que permite a usuarios externos registrarse, autenticarse, visualizar catálogo de productos, gestionar carrito de compras y realizar pagos a través de pasarela externa. El sistema está compuesto por Frontend Web, Backend API REST, Servicio de Autenticación, Base de Datos de Usuarios y Pedidos, y Pasarela de Pagos Externa. El análisis se realiza bajo la metodología STRIDE para identificar amenazas de Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service y Elevation of Privilege",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "DFD Principal - Flujo de Compra",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": []
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
